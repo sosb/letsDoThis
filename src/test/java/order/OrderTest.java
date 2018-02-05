@@ -22,7 +22,7 @@ public class OrderTest {
 
 	@Test
 	public void test4() {
-		assertEquals("", Order.order(""));
+		assertEquals("", Order.order(" "));
 	}
 
 	@Test

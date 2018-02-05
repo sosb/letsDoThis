@@ -11,7 +11,7 @@ public class Order {
 		if (words == null || isWhite(words)) {
 			return EMPTY_STRING;
 		}
-		String[] chars = words.split(" ");
+		String[] chars = words.trim().split(" ");
 		Arrays.sort(chars, Comparator.comparingInt(o -> o.charAt(getNumberIndex(o))));
 		return String.join(" ", chars);
 	}
