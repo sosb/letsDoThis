@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 public class Order {
 
-	private static final String EMPTY_STRING = "";
+	static final String EMPTY_STRING = "";
 
 	public static String order(String words) {
 		if (words == null || isWhite(words)) {
@@ -26,7 +26,7 @@ public class Order {
 		return index;
 	}
 
-	private static boolean isWhite(String word) {
+	static boolean isWhite(String word) {
 		return word.trim().isEmpty();
 	}
 }
